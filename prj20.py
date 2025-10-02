@@ -11,7 +11,7 @@ from browser_use import Agent, ChatGoogle
 
 async def main():
     llm = ChatGoogle(model="gemini-2.5-flash",
-                      api_key="AIzaSyBPFHh_tvecnypqEbqH_m1T43GS3xRx4Wo",)
+                      api_key=GOOGLE_API_KEY,)
     
     task = "Search Google for 'what is browser automation' and tell me the top 3 results"
     agent = Agent(task=task, llm=llm)
